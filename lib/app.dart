@@ -8,8 +8,12 @@ class DeveloperPortfolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        primarySwatch: Colors.blueGrey,
+      ),
+      home: const HomePage(),
     );
   }
 }
